@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styl.css" />
+    <title>Výpočet soudního poplatku</title>
+</head>
+
+<body>
+    <header class="jumbotron text-center">
+        <h1>Výpočet soudního poplatku</h1>
+    </header>
+    <main class="container text-light">
+        <div class="input-group input-group-lg my-5">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Základ poplatku</span>
+                <span class="input-group-text">Kč</span>
+            </div>
+            <input name="el_zaklad_poplatku" id="el_zaklad_poplatku" type="text" class="form-control"
+                aria-label="Částka základu soudního poplatku" value="0.00" placeholder="0.00" />
+            <div class="input-group-append">
+                <button class="btn btn-warning" type="button"
+                    onclick="validace('el_zaklad_poplatku') && vypocet('el_zaklad_poplatku', 'el_vystup_poplatek')">Výpočet</button>
+            </div>
+        </div>
+        <div id="el_vystup_poplatek"></div>
+    </main>
+    <footer class="py-4 text-white">
+        <div class="container text-center">
+            <small>Copyright &copy; Lukáš Michna, 2019+</small><br />
+            <small>verze 19.11.1.045</small>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
