@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rozměry elementů</title>
+  
+<!-- Začátek příkladu -->
+  <style>
+    span {
+      border: 1px solid red;
+    }
+    div {
+      border: 1px solid blue;
+    }
+    .w200p-h80p {
+      width: 200px;
+      height: 80px;
+    }
+    .block {
+      display: block;
+    }
+    .inline-block {
+      display: inline-block;
+    }
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>DIV ve výchozím nastavení. Automaticky nastavený na 100 % šírky stránky, 
+    protože je "block".</div>
+  <span>SPAN ve výchozím nastavení.</span>
+  <span class="w200p-h80p">SPAN s nastavenými rozměry 200 x 80 px. Nebude fungovat, 
+    protože je "inline".</span>
+  <span class="block w200p-h80p">SPAN s nastavenými rozměry 200 x 80 px. Nyní 
+    funguje, protože jsme jej deklarovali "block".</span>
+  <span class="block w200p-h80p">Blokové elementy se štosují na sebe, i když 
+    by se vedle sebe vešly.</span>
+  <span class="inline-block w200p-h80p">Ne tak inline-block.</span>
+  <span class="inline-block w200p-h80p">Ty se řadí vedle sebe, pokud se 
+    vejdou.</span>
+  <div class="none">Element s "display: none" se vůbec nezobrazí.</div>
+</body>
+<!-- Konec příkladu -->
+
+</html>
