@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pseudotřídy a pseudoelementy</title>
+  
+<!-- Začátek příkladu -->
+  <style>
+    div a{
+      color: blue;
+    }
+    div > a {
+      color: green;
+    }
+    div + a {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>
+      Dva stupně vnoření (div p a):
+      <a href="http://www.mobeetle.com" target="_blank">Modrý odkaz</a>
+    </p>
+  </div>
+  <div>
+    Přímý potomek DIVu (div > a):
+    <a href="http://www.mobeetle.com" target="_blank">Zelený odkaz</a>
+  </div>
+  <div>Odkaz A následuje bezprostředně po DIVu (div + a):</div>
+  <a href="http://www.mobeetle.com" target="_blank">červený odkaz</a>
+</body>
+<!-- Konec příkladu -->
+
+</html>
