@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pozicování elementů</title>
+  
+<!-- Začátek příkladu -->
+  <style>
+    .relativni {
+      position: relative;
+      left: 20px;
+      top: 20px;
+      border: 1px solid green;
+      width: 10px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    .absolutni {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      border: 1px solid blue;
+      width: 100px;
+      height: 100px;
+    }
+    .fixni {
+      position: fixed;
+      top: 200px;
+      left: 200px;
+      border: 1px solid red;
+      width: 250px;
+      height: 250px;
+    }
+    .prilnavy {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+      border: 1px solid fuchsia;
+      background-color: orange;
+    }
+	</style>
+</head>
+
+<body>
+  <p>Nějaký text na úvod stránky.</p>
+  <div class="prilnavy">Přilnavý element vhodný třeba na menu.</div>
+  <div class="relativni">Relativně pozicovaný element. Hodně dlouhý,
+    abychom mohli skrolovat stránku, i pokud máme velký minitor.</div>
+  <div class="fixni">Fixně pozicovaný element.</div>
+  <div class="absolutni">Absolutně pozicovaný element.</div>
+</body>
+<!-- Konec příkladu -->
+
+</html>
