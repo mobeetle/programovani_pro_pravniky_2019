@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>JavaScript nesprávný počet argumentů při volání funkce</title>
+</head>
+<body>
+  
+<!-- Začátek příkladu -->
+  <script>
+    function mojeFunkce(parametr1){
+      alert(arguments[0]);                  // Jedna
+      alert(arguments[1]);                  // Dvě
+      alert(arguments[2]);                  // Tři
+    }
+    mojeFunkce("Jedna", "Dvě", "Tři");      // Jedna Dvě Tři
+  </script>
+<!-- Konec příkladu -->
+
+</body>
+</html>
