@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Značka STYLE</title>
+  
+<!-- Začátek příkladu -->
+  <style>
+    a{
+      color: gray;
+    }
+    a:hover {
+      color: blue;
+    }
+    a:active{
+      color: green;
+    }
+    a::before {
+      content: "Podívejte se na adresu: ";
+    }
+    a:hover::after {
+      content: " Ano, kliknětě!";
+    }
+    a:active::before{
+      content: "Zvolili jste adresu: ";
+    }
+    a:active::after {
+      content: "";
+    }
+  </style>
+</head>
+
+<body>
+  Takto vypadá normální text.
+  <div>I text v DIVu by měl vypadat stejně.</div>
+  <div class="info">Text ale bude modrý, pokud bude element třídy "info".</div>
+  <div id="uvod" class="info">Nyní je ale text zelený, protože má ID "uvod" 
+    a třídu "info".</div>
+  <div id="uvod" class="varovani">A teď je text zase červený, protože má ID "uvod" 
+    a třídu "varovani". Prohlížeč si poradí i s tím, že jsme porušili pravidlo, 
+    že ID elementu musí být v dokumentu jedinečné.</div>
+</body>
+<!-- Konec příkladu -->
+
+</html>
