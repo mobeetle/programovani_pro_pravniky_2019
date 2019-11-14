@@ -5,4 +5,4 @@ Můžete si je prohlížet přímo v adresářích nebo s nimi experimentovat na
 
 ## Příklady
 [Příklad č. 1](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_01/) – 
-  _Základní HTML stránka_
+  _základní HTML stránka_
