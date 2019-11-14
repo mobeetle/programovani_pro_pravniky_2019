@@ -5,7 +5,7 @@ Můžete si je prohlížet přímo [zde v adresářích](/priklady/) nebo s nimi
 
 ## Příklady
 [Příklad č. 1](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_01/) – 
-_základní HTML stránka_
+_základní HTML stránka_\
 [Příklad č. 2](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_02/) – 
 _popis_
 [Příklad č. 3](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_03/) – 
