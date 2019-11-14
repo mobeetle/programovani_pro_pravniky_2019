@@ -1,5 +1,5 @@
-# programovani_pro_pravniky_2019
-Zde najdete příklady ke knize Lukáše Michny "Právníkův průvodce možnostmi, jak si se znalostí základů programování usnadnit práci a zpříjemnit život aneb programování pro právníky", 1. vydání, 2019, Praha, Wolters Kluwer.
+# Programování pro právníky
+Zde najdete příklady ke knize Lukáše Michny __Právníkův průvodce možnostmi, jak si se znalostí základů programování usnadnit práci a zpříjemnit život aneb programování pro právníky__, 1. vydání, 2019, Praha, Wolters Kluwer.
 
 Můžete si je prohlížet přímo [zde v adresářích](/priklady/) nebo s nimi experimentovat na [JSFiddle](https://jsfiddle.net/). Klinutím na odkazy níže se příklad otevře v editoru na JSFiddle.
 
