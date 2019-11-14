@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>JavaScript zbytkové argumenty funkce</title>
+</head>
+<body>
+  
+<!-- Začátek příkladu -->
+  <script>
+    function mojeFunkce(parametr1, ...parametry){
+      alert(parametr1);                       // Jedna
+      alert(parametry[0]);                    // Dvě
+      alert(parametry[1]);                    // Tři
+    }
+    mojeFunkce("Jedna", "Dvě", "Tři");        // Jedna Dvě Tři
+  </script>
+<!-- Konec příkladu -->
+
+</body>
+</html>
