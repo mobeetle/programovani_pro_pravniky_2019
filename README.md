@@ -37,8 +37,30 @@ _HTML - tabulky (element TABLE)_\
 [Příklad č. 16](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_16/) – 
 _HTML - obrázky (element IMG)_\
 [Příklad č. 17](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_17/) – 
-_CSS - deklarace stylu_\
+_CSS - kaskádové styly_\
 [Příklad č. 18](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_18/) – 
-_STYLE a externí soubory s kaskádovým stylem_\
+_CSS – CSS – deklarace stylu (element STYLE), externí soubor (STYLESHEET), styl definovaný na úrovni elementu (INLINE STYLE)_\
 [Příklad č. 19](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_19/) – 
-_Selektory_\
+_CSS - selektory_\
+[Příklad č. 20](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_20/) – 
+_CSS - kombinování a sdružování selektorů_\
+[Příklad č. 21](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_21/) – 
+_CSS - pseudotřídy a pseudoelementy_\
+[Příklad č. 22](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_22/) – 
+_CSS - selektory pro vnořené elementy_\
+[Příklad č. 23](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_23/) – 
+_CSS - selektory podle atributů elementu_\
+[Příklad č. 24](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_24/) – 
+_CSS - pravidla pro pozicování elementů_\
+[Příklad č. 25](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_25/) – 
+_CSS - pravidla pro rozměry elementů_\
+[Příklad č. 26](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_26/) – 
+_CSS - pravidla pro zobrazování a skrývání elementů_\
+[Příklad č. 27](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_27/) – 
+_CSS - pravidla pro nastavení barev_\
+[Příklad č. 28](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_28/) – 
+_CSS - pravidla pro nastavení písma (fonty)_\
+[Příklad č. 29 a 30](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_29/) – 
+_CSS - příklad fontu importovaného z webové služby_\
+[Příklad č. 31](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_29/) – 
+_CSS - pravidla pro rozvržení obsahu stránky (layout)_\
