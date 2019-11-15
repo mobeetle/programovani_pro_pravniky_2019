@@ -60,7 +60,7 @@ _CSS - pravidla pro zobrazování a skrývání elementů_\
 _CSS - pravidla pro nastavení barev_\
 [Příklad č. 28](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_28/) – 
 _CSS - pravidla pro nastavení písma (fonty)_\
-[Příklad č. 29 a 30](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_29/) – 
+[Příklad č. 29 a 30](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_29_30/) – 
 _CSS - příklad fontu importovaného z webové služby_\
-[Příklad č. 31](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_29/) – 
+[Příklad č. 31](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_31/) – 
 _CSS - pravidla pro rozvržení obsahu stránky (layout)_\
