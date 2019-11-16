@@ -68,3 +68,21 @@ _CSS - pravidla pro rozvržení obsahu stránky (layout)_\
 _JavaScript - kód v hlavní stránce (element SCRIPT)_\
 [Příklad č. 33](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_33/) – 
 _JavaScript - kód v externím souboru (import pomocí elementu SCRIPT)_\
+[Příklad č. 34](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_34/) – 
+_JavaScript - deklarace proměnných_\
+[Příklad č. 35](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_35/) – 
+_JavaScript - aritmetické operátory_\
+[Příklad č. 36](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_36/) – 
+_JavaScript - přiřazovací operátory_\
+[Příklad č. 37](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_37/) – 
+_JavaScript - porovnávací operátory_\
+[Příklad č. 38](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_38/) – 
+_JavaScript - logické operátory_\
+[Příklad č. 39](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_39/) – 
+_JavaScript - logické operátory s nelogickými hodnotami_\
+[Příklad č. 40](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_40/) – 
+_JavaScript - deklarace a volání funkce_\
+[Příklad č. 41](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_41/) – 
+_JavaScript - nesprávný počet argumentů při volání funkce_\
+[Příklad č. 42](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_42/) – 
+_JavaScript - zbytkové parametry funkce_\
