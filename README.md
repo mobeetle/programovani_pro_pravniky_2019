@@ -88,6 +88,5 @@ _JavaScript - nesprávný počet argumentů při volání funkce_\
 _JavaScript - zbytkové parametry funkce_\
 
 |         |            |   |
-| ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
