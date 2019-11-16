@@ -64,3 +64,7 @@ _CSS - pravidla pro nastavení písma (fonty)_\
 _CSS - příklad fontu importovaného z webové služby_\
 [Příklad č. 31](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_31/) – 
 _CSS - pravidla pro rozvržení obsahu stránky (layout)_\
+[Příklad č. 32](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_32/) – 
+_JavaScript - kód v hlavní stránce (element SCRIPT)_\
+[Příklad č. 33](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_33/) – 
+_JavaScript - kód v externím souboru (import pomocí elementu SCRIPT)_\
