@@ -86,7 +86,3 @@ _JavaScript - deklarace a volání funkce_\
 _JavaScript - nesprávný počet argumentů při volání funkce_\
 [Příklad č. 42](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_42/) – 
 _JavaScript - zbytkové parametry funkce_\
-
-|         |            |   |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
