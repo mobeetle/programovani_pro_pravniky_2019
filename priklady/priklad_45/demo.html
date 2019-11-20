@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>45/ JavaScript - šipkové funkce</title>
+</head>
+<body>
+
+  <!-- Začátek příkladu -->
+  <script>
+    const mojeFunkce = (parametr1, parametr2) => {
+      //...
+      return parametr1 + parametr2
+    }
+    alert(mojeFunkce("Programování", " v JavaScriptu"));		    // Programování v JavaScriptu
+
+    const mojeKratkaFunkce = (parametr1, parametr2) => parametr1 + parametr2
+    alert(mojeKratkaFunkce("Programování", " v JavaScriptu"));	// Programování v JavaScriptu
+
+    const mojeNejkratsiFunkce = parametr1 => parametr1 + "..."
+    alert(mojeNejkratsiFunkce("Programování"));					        // Programování...
+  </script>
+  <!-- Konec příkladu -->
+
+</body>
+</html>
