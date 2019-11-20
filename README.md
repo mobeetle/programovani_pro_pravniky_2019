@@ -138,3 +138,5 @@ _Bootstrap - mřížkový systém_\
 _Bootstrap - komponenty_\
 [Příklad č. 68](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_68/) – 
 _Node.js - základní program_\
+[Příklad č. 69](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_69/) – 
+_Node.js - modul FileSystem_\
