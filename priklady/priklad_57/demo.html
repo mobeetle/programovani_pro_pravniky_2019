@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>57/ JavaScript - třídy CLASS</title>
+</head>
+<body>
+
+  <!-- Začátek příkladu -->
+  <script>
+    class Pravnik {
+      constructor(jmeno, skola) {
+      this.jmeno = jmeno;
+        this.skola = skola;
+      }
+      info(){
+        return `Právník ${this.jmeno} je absolventem ${this.skola}`
+      }
+    }
+
+    class Advokat extends Pravnik{
+      constructor(jmeno, skola, specializace) {
+          super(jmeno, skola);
+          this.specializace = specializace;
+          this.typ = "advokát";
+      }
+      info(){
+        return `Advokát ${this.jmeno} je absolventem ${this.skola} a specializuje se na ${this.specializace}`
+      }
+    }
+
+    class Soudce extends Pravnik{
+      constructor(jmeno, skola, usek) {
+          super(jmeno, skola);
+          this.usek = usek;
+          this.typ = "soudce";
+      }
+      info(){
+        return `Soudce ${this.jmeno} je absolventem ${this.skola} a soudí na ${this.usek} úseku`
+      }
+    }
+
+    class Podnikovy extends Pravnik{
+      constructor(jmeno, skola, firma) {
+          super(jmeno, skola);
+          this.firma = firma;
+          this.typ = "podnikový právník";
+      }
+      info(){
+        return `Právník ${this.jmeno} je absolventem ${this.skola} a pracuje v ${this.firma}`
+      }
+    }
+
+    let lukas = new Advokat("Lukáš Michna", "Paris 1", "nemovitosti");
+    let lukas2 = new Soudce("Lukáš Michna", "Paris 1", "civilním");
+    let lukas3 = new Podnikovy("Lukáš Michna", "Paris 1", "Mobeetle");
+
+    alert(lukas.info());
+    alert(lukas2.info());
+    alert(lukas3.info());
+  </script>
+  <!-- Konec příkladu -->
+
+</body>
+</html>

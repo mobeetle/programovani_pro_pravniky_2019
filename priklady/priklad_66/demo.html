@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<!-- Začátek příkladu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    [class^="col"]{
+      border: 1px solid blue;
+    }
+  </style>
+  <title>66/ Bootstrap - mřížkový systém</title>
+</head>
+<body>
+  <main class="container" id="kontejner">
+    <article class="row">
+      <section class="col-3">col-3</section>
+      <section class="col-5">col-5</section>
+      <section class="col-4">col-4</section>
+    </article>
+    <article class="row">
+      <section class="col-sm-3">col-sm-3</section>
+      <section class="col-sm-5">col-sm-5</section>
+      <section class="col-sm-4">col-sm-4</section>
+    </article>
+    <article class="row">
+      <section class="col-md-3">col-md-3</section>
+      <section class="col-md-5">col-md-5</section>
+      <section class="col-md-4">col-md-4</section>
+    </article>
+    <article class="row">
+      <section class="col-lg-3">col-lg-3</section>
+      <section class="col-lg-5">col-lg-5</section>
+      <section class="col-lg-4">col-lg-4</section>
+    </article>
+    <article class="row">
+      <section class="col-xl-3">col-xl-3</section>
+      <section class="col-xl-5">col-xl-5</section>
+      <section class="col-xl-4">col-xl-4</section>
+    </article>
+  </main>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary" onclick="nastavVelikost(500)">XS</button>
+    <button type="button" class="btn btn-primary" onclick="nastavVelikost(750)">SM</button>
+    <button type="button" class="btn btn-primary" onclick="nastavVelikost(850)">MD</button>
+    <button type="button" class="btn btn-primary" onclick="nastavVelikost(1000)">LG</button>
+    <button type="button" class="btn btn-primary" onclick="nastavVelikost(1250)">XL</button>
+  </div>
+  <script>
+    let kontejner = document.getElementById("kontejner");
+    function nastavVelikost(sirka){
+      kontejner.style.width = sirka+"px";
+    }  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Konec příkladu -->
+
+</body>
+</html>

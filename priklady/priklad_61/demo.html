@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>61/ JavaScript - práce se vzorovými řetězci pomocí TEMPLATE STRINGS</title>
+</head>
+<body>
+
+  <!-- Začátek příkladu -->
+  <script>
+    let osoba1 = "Lukáš";
+    let osoba2 = "Samuel";
+    let vek1 = 42;
+    let vek2 = 4;
+
+    let veta1 = `Jmenuji se ${osoba1} a je mi ${vek1}`;		
+    let veta2 = `Jmenuji se ${osoba2} a je mi ${vek2}`;
+    let veta3 = `${osoba1} je ${vek1 > vek2 ? "starší" : "mladší"} než ${osoba2}`;
+
+    alert(veta1);		// Jmenuji se Lukáš a je mi 42
+    alert(veta2);		// Jmenuji se Samuel a je mi 4
+    alert(veta3);		// Lukáš je starší než Samuel
+  </script>
+  <!-- Konec příkladu -->
+
+</body>
+</html>

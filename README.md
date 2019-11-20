@@ -86,3 +86,55 @@ _JavaScript - deklarace a volání funkce_\
 _JavaScript - nesprávný počet argumentů při volání funkce_\
 [Příklad č. 42](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_42/) – 
 _JavaScript - zbytkové parametry funkce_\
+[Příklad č. 43](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_43/) – 
+_JavaScript - výchozí hodnota parametrů_\
+[Příklad č. 44](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_44/) – 
+_JavaScript - návratová hodnota funkce_\
+[Příklad č. 45](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_45/) – 
+_JavaScript - šipkové (arrow) funkce_\
+[Příklad č. 46](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_46/) – 
+_JavaScript - podmínka IF_\
+[Příklad č. 47](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_47/) – 
+_JavaScript - podmínka IF ... ELSE_\
+[Příklad č. 48](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_48/) – 
+_JavaScript - podmínka IF ... ELSE IF ... ELSE_\
+[Příklad č. 49](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_49/) – 
+_JavaScript - smyčka FOR_\
+[Příklad č. 50](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_50/) – 
+_JavaScript - smyčka FOR ... IN a FOR ... OF_\
+[Příklad č. 51](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_51/) – 
+_JavaScript - smyčka WHILE a DO ... WHILE_\
+[Příklad č. 52](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_52/) – 
+_JavaScript - přepínač SWITCH_\
+[Příklad č. 53](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_53/) – 
+_JavaScript - pole ARRAY_\
+[Příklad č. 54](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_54/) – 
+_JavaScript - přidávání a odebírání prvků pole_\
+[Příklad č. 55](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_55/) – 
+_JavaScript - procházení pole pomocí metody forEach()_\
+[Příklad č. 56](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_56/) – 
+_JavaScript - objekty OBJECT_\
+[Příklad č. 57](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_57/) – 
+_JavaScript - třídy CLASS_\
+[Příklad č. 58](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_58/) – 
+_JavaScript - zaokrouhlování pomocí Math.round()_\
+[Příklad č. 59](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_59/) – 
+_JavaScript - práce s datem a časem pomocí objektu DATE_\
+[Příklad č. 60](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_60/) – 
+_JavaScript - práce s řetězci pomocí objektu STRING_\
+[Příklad č. 61](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_61/) – 
+_JavaScript - práce se vzorovými řetězci pomocí TEMPLATE STRINGS_\
+[Příklad č. 62](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_62/) – 
+_JavaScript - interakce s uživatelem pomocí funkcí alert() a prompt()_\
+[Příklad č. 63](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_63/) – 
+_JavaScript - interakce s uživatelem pomocí funkcí a vlastností getElementById(), value, innerHTML a innerText_\
+[Příklad č. 64](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_64/) – 
+_Vývojový diagram výpočtu soudního poplatku ze základu peněžité částky_\
+[Příklad č. 65](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_65/) – 
+_Bootstrap - uživatelské rozhraní_\
+[Příklad č. 66](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_66/) – 
+_Bootstrap - mřížkový systém_\
+[Příklad č. 67](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_67/) – 
+_Bootstrap - komponenty_\
+[Příklad č. 68](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_68/) – 
+_Node.js - základní program_\
