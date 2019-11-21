@@ -144,3 +144,11 @@ _Node.js - modul FileSystem_\
 _Node.js - tvorba vlastních modulů_\
 [Příklad č. 71](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_71/) – 
 _Node.js - manažer balíčků NPM_\
+[Příklad č. 72](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_72/) – 
+_Electron - základní aplikace_\
+[Příklad č. 73](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_73/) – 
+_Electron - tvorba binárního souboru pro distribuci aplikace v electron-packager_\
+[Příklad č. 74](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_74/) – 
+_Příklady - výpočet lhůty_\
+[Příklad č. 75](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_75/) – 
+_Příklady - výpočet období_\
