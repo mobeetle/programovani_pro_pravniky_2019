@@ -160,5 +160,5 @@ _Příklady - výpočet složeného úroku_\
 _Příklady - výpočet výše anuitní platby_\
 [Příklad č. 79](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_79/) – 
 _Příklady - výpočet zbývající jistiny dluhu_\
-[Příklad č. 80](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_80_/) – 
-_Příklady - výpočet soudního poplatku_\
+[Příklad č. 80](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_80/) – 
+_Příklady - výpočet soudního poplatku_
