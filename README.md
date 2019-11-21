@@ -147,8 +147,18 @@ _Node.js - manažer balíčků NPM_\
 [Příklad č. 72](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_72/) – 
 _Electron - základní aplikace_\
 [Příklad č. 73](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_73/) – 
-_Electron - tvorba binárního souboru pro distribuci aplikace v electron-packager_\
+_Electron - tvorba binárního souboru pro distribuci v electron-packager_\
 [Příklad č. 74](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_74/) – 
 _Příklady - výpočet lhůty_\
 [Příklad č. 75](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_75/) – 
 _Příklady - výpočet období_\
+[Příklad č. 76](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_76/) – 
+_Příklady - výpočet jednoduchého úroku_\
+[Příklad č. 77](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_77/) – 
+_Příklady - výpočet složeného úroku_\
+[Příklad č. 78](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_78/) – 
+_Příklady - výpočet výše anuitní platby_\
+[Příklad č. 79](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_79/) – 
+_Příklady - výpočet zbývající jistiny dluhu_\
+[Příklad č. 80](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_80_/) – 
+_Příklady - výpočet soudního poplatku_\

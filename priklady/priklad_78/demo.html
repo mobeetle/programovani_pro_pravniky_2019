@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>78/ Příklady - výpočet výše anuitní platby</title>
+</head>
+<body>
+
+<!-- Začátek příkladu -->
+<script>
+function spocitejAnuitniPlatbu(jistina, celkem_let, rocni_urokova_sazba, anuit_za_rok, desetinky){
+	let anuitni_urok = (rocni_urokova_sazba / anuit_za_rok) / 100;
+	let anuit_celkem = celkem_let * anuit_za_rok;
+  let vyse_anuity = (anuitni_urok * jistina) / (1 - (Math.pow(1 + anuitni_urok, -anuit_celkem)));
+  return vyse_anuity.toFixed(desetinky);
+}
+alert(spocitejAnuitniPlatbu(30000, 2, 6.5, 12, 2));		  // 1336.39
+</script>
+<!-- Konec příkladu -->
+
+</body>
+</html>
