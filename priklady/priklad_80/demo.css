@@ -1,26 +1,27 @@
 body {
-    background-color: #4A235A !important;
+  background-color: #4A235A !important;
 }
 
 footer {
-	position: absolute;
-    bottom: 0;
-    flex-shrink: none;
-    width: 100%;
-    background-color: #5B2C6F;
-    opacity: 0.6;
+position: absolute;
+  bottom: 0;
+  flex-shrink: none;
+  width: 100%;
+  background-color: #5B2C6F;
+  opacity: 0.6;
 }
 
 .card{
-    background: transparent;
-    border-color: #7D3C98;
+  background: #4A235A !important;
+  border-color: #7D3C98 !important;
+  opacity: 0.5;
 }
 
 .vyse_poplatku{
-    padding-left: 1em;
-    padding-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .vetsi_text{
-    font-size: 150%;
+  font-size: 150%;
 }
