@@ -140,3 +140,7 @@ _Bootstrap - komponenty_\
 _Node.js - základní program_\
 [Příklad č. 69](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_69/) – 
 _Node.js - modul FileSystem_\
+[Příklad č. 70](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_70/) – 
+_Node.js - tvorba vlastních modulů_\
+[Příklad č. 71](https://jsfiddle.net/gh/get/library/pure/mobeetle/programovani_pro_pravniky_2019/tree/master/priklady/priklad_71/) – 
+_Node.js - manažer balíčků NPM_\
