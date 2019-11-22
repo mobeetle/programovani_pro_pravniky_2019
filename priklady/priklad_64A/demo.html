@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" t>
+  <title>64A/ JavaScript - vlastní komponenty</title>
+</head>
+<body>
+
+<!-- Začátek příkladu -->
+<muj-element>LISTINA ZÁKLADNÍCH PRÁV A SVOBOD
+Federální shromáždění na základě návrhů České národní rady a Slovenské národní rady,  uznávajíc neporušitelnost přirozených práv člověka, práv občana a svrchovanost zákona, navazujíc na obecně sdílené hodnoty lidství a na demokratické a samosprávné tradice našich národů, pamětlivo trpkých zkušeností z dob, kdy lidská práva a základní svobody byly v naší vlasti potlačovány, vkládajíc naděje do zabezpečení těchto práv společným úsilím všech svobodných národů, vycházejíc z práva českého národa a slovenského národa na sebeurčení, připomínajíc si svůj díl odpovědnosti vůči budoucím generacím za osud veškerého života na Zemi a vyjadřujíc vůli, aby se Česká a Slovenská Federativní Republika důstojně zařadila mezi státy, jež tyto hodnoty ctí, usneslo se na této Listině základních práv a svobod:
+HLAVA PRVNÍ
+OBECNÁ USTANOVENÍ
+Čl. 1
+Lidé jsou svobodní a rovní v důstojnosti i v právech. Základní práva a svobody jsou nezadatelné, nezcizitelné, nepromlčitelné a nezrušitelné.
+Čl. 2
+(1) Stát je založen na demokratických hodnotách a nesmí se vázat ani na výlučnou ideologii, ani na náboženské vyznání.
+(2) Státní moc lze uplatňovat jen v případech a v mezích stanovených zákonem, a to způsobem, který zákon stanoví.
+(3) Každý může činit, co není zákonem zakázáno, a nikdo nesmí být nucen činit, co zákon neukládá.
+Čl. 3
+(1) Základní práva a svobody se zaručují všem bez rozdílu pohlaví, rasy, barvy pleti, jazyka, víry a náboženství, politického či jiného smýšlení, národního nebo sociálního původu, příslušnosti k národnostní nebo etnické menšině, majetku, rodu nebo jiného postavení.
+(2) Každý má právo svobodně rozhodovat o své národnosti. Zakazuje se jakékoli ovlivňování tohoto rozhodování a všechny způsoby nátlaku směřující k odnárodňování.
+(3) Nikomu nesmí být způsobena újma na právech pro uplatňování jeho základních práv a svobod.
+Čl. 4
+(1) Povinnosti mohou být ukládány toliko na základě zákona a v jeho mezích a jen při zachování základních práv a svobod.
+(2) Meze základních práv a svobod mohou být za podmínek stanovených Listinou základních práv a svobod (dále jen "Listina") upraveny pouze zákonem.
+(3) Zákonná omezení základních práv a svobod musí platit stejně pro všechny případy, které splňují stanovené podmínky.
+(4) Při používání ustanovení o mezích základních práv a svobod musí být šetřeno jejich podstaty a smyslu. Taková omezení nesmějí být zneužívána k jiným účelům, než pro které byla stanovena.
+</muj-element>
+<script>
+// funkcionalitu si definujeme pomocí třídy MujElement
+class MujElement extends HTMLElement {
+  constructor() {
+    super();
+    this.perex_text = this.innerHTML.substr(0,119);		// načteme si text perexu (prvních 120 znaků) 
+    this.main_text = this.innerHTML.substr(119);			// načteme si zbytek
+    /* s tímto by si šlo samozřejmě více vyhrát, např. aby to načítalo perex automaticky po první čárku,
+     * nikoli natvrdo 120 znaků, atp. */
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.innerHTML = `
+      <style>
+        .perex{
+        	font-weight: bold;
+          font-style: italic;
+        }
+        .skryty{
+        	display: none;
+        }
+        .viditelny{
+        	display: inline;
+        }
+      </style>
+      <section>
+      	<span class="perex viditelny">${this.perex_text}</span>
+        <button class="zobraz_vice viditelny">Zobraz více</button>
+        <span class="pokracovani skryty">${this.main_text}</span>
+        <button class="zobraz_mene skryty">Zobraz méně</buttton>
+  		</section>`;		// nastavíme si vnitřní strukturu našeho elementu
+  }
+  
+  // funkce connectedCallback() se volá, jakmile je element připojen do stránky 
+  connectedCallback() {
+  	let main_el = this.shadowRoot.querySelector("section");			// připojíme se na hlavní element
+    let zobraz_button_el = this.shadowRoot.querySelector(".zobraz_vice");	// připojíme se na tlačítko "zobraz více"
+    let pokracovani_el = this.shadowRoot.querySelector(".pokracovani");		// připojíme se na element se zbytkem textu
+    let skryj_button_el = this.shadowRoot.querySelector(".zobraz_mene");  // připojíme se na tlačítko "zobraz méne"
+    
+   	// definujeme ovladač události "klik" u tlačítka "zobraz více"
+    zobraz_button_el.addEventListener("click", function(e){
+    	e.target.classList.remove("viditelny");
+      e.target.classList.add("skryty");								// skryj toto tlačítko
+    	pokracovani_el.classList.remove("skryty");
+      pokracovani_el.classList.add("viditelny");			// zobraz zbytek textu
+      skryj_button_el.classList.remove("skryty");
+      skryj_button_el.classList.add("viditelny");			// zobraz tlačítko "zobraz méne"
+    });
+    
+    // definujeme ovladač události "klik" u tlačítka "zobraz méně"
+    skryj_button_el.addEventListener("click", function(e){
+    	e.target.classList.remove("viditelny");					
+      e.target.classList.add("skryty");								// skryj toto tlačítko
+    	pokracovani_el.classList.remove("viditelny");
+      pokracovani_el.classList.add("skryty");					// skryj zbytek textu
+      zobraz_button_el.classList.remove("skryty");
+      zobraz_button_el.classList.add("viditelny");		// zobraz tlačítko "zobraz více"
+    });
+	} 
+}
+window.customElements.define('muj-element', MujElement);		// zde si definujeme náš element
+</script>
+<!-- Konec příkladu -->
+
+</body>
+</html>
