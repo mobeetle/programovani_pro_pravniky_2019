@@ -1,9 +1,9 @@
-/**
-  * --------------------------------------------------------------------------
-  * Program pro Node.js
-  * Pozor, tento příklad nebude fungovat mimo prostředí Node.js
-  * --------------------------------------------------------------------------
-  */
+/*
+ * --------------------------------------------------------------------------
+ * Program pro Node.js
+ * Pozor, tento příklad nebude fungovat mimo prostředí Node.js
+ * --------------------------------------------------------------------------
+ */
 
 let http = require('http');     // načtení modulu HTTP
 let hostname = '127.0.0.1';     // nastavení adresy místního počítače (localhost)

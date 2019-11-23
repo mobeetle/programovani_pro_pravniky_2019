@@ -12,13 +12,13 @@ let hostname = '127.0.0.1';             // nastavení adresy místního počíta
 let port = 3000;                        // nastavení portu (doporučené od 1025 do 65535)
 
 // konfigurace serveru
-let server = http.createServer((req, res) => { 
-    res.statusCode = 200; 
-    res.setHeader('Content-Type', 'text/plain'); 
+let server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
   res.end(ucm('Ahoj! Node.js!'));     // odeslání odpovědi transformované modulem upper-case
 })
 
 // spuštění serveru
 server.listen(port, hostname, () => {
-console.log(`Aplikace běží na adrese http://${hostname}:${port}/`)
+  console.log(`Aplikace běží na adrese http://${hostname}:${port}/`)
 });

@@ -1,4 +1,8 @@
-<!-- demo.html -->
+<!-- ------------------------------------------------------------------------
+ *                                                                          *
+ *                                 demo.html                                *
+ *                                                                          *
+ ------------------------------------------------------------------------- -->
 
 <!DOCTYPE html>
 <html>
@@ -9,7 +13,11 @@
     a vlastností getElementById(), value, innerHTML a innerText</title>
 </head>
 
-<!-- Začátek příkladu -->
+<!-- ------------------------------------------------------------------------
+ *                                                                          *
+ *                             Začátek příkladu                             *
+ *                                                                          *
+ ------------------------------------------------------------------------- -->
 
 <body>
   <input type="text" id="vstup1" />
@@ -17,14 +25,14 @@
   <button id="tlacitko1" onclick="osetrivstup()">Klikni</button>
   <script>
 
-    /**
-      * --------------------------------------------------------------------------
-      * Ovladače událostí Event Handler:
-      *
-      * lze definovat přímo na elementu v atributu onclick="...ovladac(e)..."
-      * nebo programově pomocí metody addEventListener(...parametry...)
-      * --------------------------------------------------------------------------
-      */
+    /*
+     * --------------------------------------------------------------------------
+     * Ovladače událostí Event Handler:
+     *
+     * lze definovat přímo na elementu v atributu onclick="...ovladac(e)..."
+     * nebo programově pomocí metody addEventListener(...parametry...)
+     * --------------------------------------------------------------------------
+     */
 
     function osetrivstup() {
       let vstup1 = document.getElementById("vstup1");
@@ -39,6 +47,10 @@
     tlacitko1.addEventListener("click", oznam_kliknuti);
   </script>
 </body>
-<!-- Konec příkladu -->
+<!-- ------------------------------------------------------------------------
+ *                                                                          *
+ *                              Konec příkladu                              *
+ *                                                                          *
+ ------------------------------------------------------------------------- -->
 
 </html>

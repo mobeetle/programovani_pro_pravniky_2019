@@ -15,7 +15,7 @@ let port = 3000;                // nastavení portu (doporučené od 1025 do 655
 // konfigurace serveru
 let server = http.createServer((req, res) => {
   fs.readFile('odpoved.html', (err, data) => {  // načtení souboru s odpovědí
-    res.statusCode = 200; 
+    res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.write(data);
     res.end();

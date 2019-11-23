@@ -1,1 +1,6 @@
-document.write("První kód v JavaScriptu")
+/*
+ * --------------------------------------------------------------------------
+ * demo.js
+ */
+
+document.write("První kód v JavaScriptu");

@@ -6,11 +6,11 @@
  * main.js
  */
 
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require('electron');
 const path = require('path');
 let mainWindow;
 
-function createWindow () {
+function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
     if (element) element.innerText = text
-  } 
+  }
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, process.versions[type])
   }
@@ -61,18 +61,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 {
   "name": "zakladni-electron-aplikace",
-  "version": "1.0.0",
-  "description": "Základní Electron aplikace",
-  "main": "main.js",
-  "scripts": {
+    "version": "1.0.0",
+      "description": "Základní Electron aplikace",
+        "main": "main.js",
+          "scripts": {
     "start": "electron ."
   },
   "repository": "",
-  "keywords": [
-    "Electron"
-  ],
-  "author": "autor",
-  "license": "CC0-1.0",
-  "devDependencies": {
+    "keywords": [
+      "Electron"
+    ],
+      "author": "autor",
+        "license": "CC0-1.0",
+          "devDependencies": {
     "electron": "^7.0.1"
   }
