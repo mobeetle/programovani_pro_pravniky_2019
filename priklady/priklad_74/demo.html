@@ -1,9 +1,10 @@
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- *                                                                          *
- *                                 demo.html                                *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                                 demo.html                                
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 <!DOCTYPE html>
 <html>
 
@@ -14,58 +15,58 @@
 
 <body>
 
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                             Začátek příkladu                             *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                             Začátek příkladu                             
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
   <label for="pocatecni_datum">Vyberte počáteční datum:</label>
   <input type="date" value="2019-01-01" name="pocatecni_datum" oninput="byloVybranoDatum(event);return false;" />
   <div id="vystup"></div>
   <script>
-    const ms_den = 1000 * 60 * 60 * 24;     // délka dne v milisekundách
-    const brezen = 2;                       // object Date označuje březen jako 2. měsíc
-    const duben = 3;                        // object Date označuje duben jako 3. měsíc
-    const svatky = ["01-01", "05-01", "05-08", "07-05", "07-06", "09-28", "10-28", "11-17", "12-24",
-      "12-25", "12-26"];                    // pole s daty svátků ve formátu MM-DD
+    const ms_den = 1000 * 60 * 60 * 24;                             // délka dne v milisekundách
+    const brezen = 2;                                               // object Date označuje březen jako 2. měsíc
+    const duben = 3;                                                // object Date označuje duben jako 3. měsíc
+    const svatky = ["01-01", "05-01", "05-08", "07-05", "07-06", 
+      "09-28", "10-28", "11-17", "12-24", "12-25", "12-26"];        // pole s daty svátků ve formátu MM-DD
 
     function byloVybranoDatum(e) {
-      let pocatecni_datum = new Date(e.target.value);   // načteme počáteční datum
-      let delka_lhuty_dny = 15;                         // pevně stanovená doba trvání 15 dní
-      let vystup = document.getElementById("vystup");   // aktivace výstupu
+      let pocatecni_datum = new Date(e.target.value);               // načteme počáteční datum
+      let delka_lhuty_dny = 15;                                     // pevně stanovená doba trvání 15 dní
+      let vystup = document.getElementById("vystup");               // aktivace výstupu
       vystup.innerHTML = `Lhůta v délce trvání <b>${delka_lhuty_dny} dní</b>, která započala běžet 
         <b>${pocatecni_datum.toISOString().substr(0, 10)}</b>, skončí dne 
         <b>${spocitejKonecLhuty(pocatecni_datum, delka_lhuty_dny)}</b>`;  // zápis hodnoty do výstupu
     }
 
     function spocitejKonecLhuty(pocatecni_datum, delka_lhuty_dny) {
-      // pozn. celé by to šlo i úplně jinak
-      let delka_lhuty_ms = delka_lhuty_dny * ms_den;    // 15 dní v milisekundách  
+      let delka_lhuty_ms = delka_lhuty_dny * ms_den;                // 15 dní v milisekundách  
       let konecne_datum = new Date(pocatecni_datum.getTime() + delka_lhuty_ms);
 
-      //  pokud konec připadá na březen nebo duben, přidáme do svátků i Velikonoce
+      /*  pokud konec připadá na březen nebo duben, přidáme do svátků i Velikonoce */
       if (konecne_datum.getMonth() == brezen ||
         konecne_datum.getMonth() == duben) {
         velikonoce(konecne_datum.getFullYear(), svatky);
       }
 
-      /*  Ověříme, zda konec lhůty nepřipadá na sobotu, neděli nebo svátek, a pokud
-          ano, posuneme konec lhůty na nejbližší následující pracovní den */
+      /*  Ověříme, zda konec lhůty nepřipadá na sobotu, neděli nebo svátek, a pokud ano, posuneme konec lhůty na nejbližší 
+          následující pracovní den */
       while (konecne_datum.getDay() == 6 ||
         konecne_datum.getDay() == 0 ||
         svatky.includes(konecne_datum.toISOString().substr(5, 5))) {
         konecne_datum = new Date(konecne_datum.getTime() + ms_den);
       }
 
-      // Vrátíme výsledek
-      return konecne_datum.toISOString().substr(0, 10)
+      return konecne_datum.toISOString().substr(0, 10)               // vrátíme výsledek
     }
 
-    // https://stackoverflow.com/questions/1284314/easter-date-in-javascript
+    /* credits to: https://stackoverflow.com/questions/1284314/easter-date-in-javascript */
     function velikonoce(rok_int, vystup_arr) {
       let r = rok_int;
 
-      //  Velikonoce se odvozují od prvního jarního úplňku
+      /*  Velikonoce se odvozují od prvního jarního úplňku */
       let prvni_jarni_uplnek = new Date(`${r}-01-01`);
       let a = r % 19;
       let b = (2200 <= r && r <= 2299) ?
@@ -77,15 +78,15 @@
       let d = (50 - c) % 31;
       prvni_jarni_uplnek.setMonth(m, d);
 
-      //  Velikonoční neděle je první neděle po prvním jarním úplňku
+      /*  Velikonoční neděle je první neděle po prvním jarním úplňku */
       let velikonocni_nedele = new Date(prvni_jarni_uplnek.toISOString().substr(0, 10));
       velikonocni_nedele.setDate(d + (7 - prvni_jarni_uplnek.getDay()));
 
-      //  Velký pátek předchází velikonoční neděli
+      /*  Velký pátek předchází velikonoční neděli */
       let velky_patek = new Date(velikonocni_nedele.toISOString().substr(0, 10));
       velky_patek.setDate(velikonocni_nedele.getDate() - 2);
 
-      //  Velikonoční pondělí následuje po velikonoční neděli */
+      /*  Velikonoční pondělí následuje po velikonoční neděli */
       let velikonocni_pondeli = new Date(velikonocni_nedele.toISOString().substr(0, 10));
       velikonocni_pondeli.setDate(velikonocni_nedele.getDate() + 1);
 
@@ -96,11 +97,13 @@
       if (!vystup_arr.includes(velikonocni_pondeli_str)) { vystup_arr.push(velikonocni_pondeli_str) }
     }
   </script>
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                              Konec příkladu                              *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                              Konec příkladu                              
+ *                                                                          
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 
 </body>
 

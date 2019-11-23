@@ -1,9 +1,11 @@
 /*
- * --------------------------------------------------------------------------
- * Electron - základní aplikace
- * Pozor, tento příklad nebude fungovat mimo prostředí Electron
- * --------------------------------------------------------------------------
- * main.js
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ * 
+ *  Electron - základní aplikace
+ *  Pozor, tento příklad nebude fungovat mimo prostředí Electron
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *  main.js
  */
 
 const { app, BrowserWindow } = require('electron');
@@ -33,8 +35,8 @@ app.on('activate', function () {
 });
 
 /*
- * --------------------------------------------------------------------------
- * preload.js
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *  preload.js
  */
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -48,15 +50,15 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 /*
- * --------------------------------------------------------------------------
- * renderer.js
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *  renderer.js
  */
 
 // zde si může čtenář doplnit kód dle ctěné libosti
 
 /*
- * --------------------------------------------------------------------------
- * package.json
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *  package.json
  */
 
 {

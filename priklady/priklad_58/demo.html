@@ -1,9 +1,10 @@
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- *                                                                          *
- *                                 demo.html                                *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                                 demo.html                                
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 <!DOCTYPE html>
 <html>
 
@@ -14,36 +15,40 @@
 
 <body>
 
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                             Začátek příkladu                             *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                             Začátek příkladu                             
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
   <script>
     function zaokrouhliDesetiny(x, presnost = 2) {
-      return +(Math.round(x + `e+${presnost}`) + `e-${presnost}`)
-      // zde lze použít také x.toFixed(presnost)
+      return +(Math.round(x + `e+${presnost}`) + `e-${presnost}`) 
+      // zde lze alternativně použít také x.toFixed(presnost)
     }
     
     function zaokrouhliCela(x, presnost = 2) {
       return +(Math.round(x + `e-${presnost}`) + `e+${presnost}`)
     }
 
-    alert(zaokrouhliDesetiny(1.43678, 1));		// 1.4
-    alert(zaokrouhliDesetiny(1.43678, 2));		// 1.44
-    alert(zaokrouhliDesetiny(1.43678, 3));		// 1.437
-    alert(zaokrouhliDesetiny(1.43678, 4));		// 1.4368
+    alert(zaokrouhliDesetiny(1.43678, 1));		                    // 1.4
+    alert(zaokrouhliDesetiny(1.43678, 2));		                    // 1.44
+    alert(zaokrouhliDesetiny(1.43678, 3));		                    // 1.437
+    alert(zaokrouhliDesetiny(1.43678, 4));		                    // 1.4368
 
-    alert(zaokrouhliCela(24859, 1));		  		// 24860
-    alert(zaokrouhliCela(24859, 2));		  		// 24900
-    alert(zaokrouhliCela(24859, 3));		  		// 25000
-    alert(zaokrouhliCela(24859, 4));			  	// 20000
+    alert(zaokrouhliCela(24859, 1));		  		                    // 24860
+    alert(zaokrouhliCela(24859, 2));		  		                    // 24900
+    alert(zaokrouhliCela(24859, 3));		  		                    // 25000
+    alert(zaokrouhliCela(24859, 4));			  	                    // 20000
   </script>
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                              Konec příkladu                              *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                              Konec příkladu                              
+ *                                                                          
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 
 </body>
 

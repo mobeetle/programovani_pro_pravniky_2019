@@ -1,10 +1,12 @@
 /*
- * --------------------------------------------------------------------------
- * Electron - tvorba binárního souboru pro distribuci aplikace 
- * v electron-packager
- * Pozor, tento příklad nebude fungovat mimo prostředí Electron
- * --------------------------------------------------------------------------
- * package.json
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  
+ *  Electron - tvorba binárního souboru pro distribuci aplikace 
+ *  v electron-packager
+ *  Pozor, tento příklad nebude fungovat mimo prostředí Electron
+ * 
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *  package.json
  */
 
 {

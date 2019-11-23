@@ -1,9 +1,10 @@
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- *                                                                          *
- *                                 demo.html                                *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                                 demo.html                                
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 <!DOCTYPE html>
 <html>
 
@@ -14,11 +15,13 @@
 
 <body>
 
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                             Začátek příkladu                             *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                             Začátek příkladu                             
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
   <script>
     function spocitejSlozenyUrokZaObdobi(jistina, celkem_let, rocni_urokova_sazba, desetinky) {
       let rocni_urok_pct = (rocni_urokova_sazba / 100);
@@ -26,13 +29,15 @@
       let slozeny_urok_pct_za_obdobi = (Math.pow(rocni_nasobitel, celkem_let) - 1);
       return ((slozeny_urok_pct_za_obdobi * jistina).toFixed(desetinky))
     }
-    alert(spocitejSlozenyUrokZaObdobi(30000, 2, 6.5, 2));     // 4026.75
+    alert(spocitejSlozenyUrokZaObdobi(30000, 2, 6.5, 2));                 // 4026.75
   </script>
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                              Konec příkladu                              *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                              Konec příkladu                              
+ *                                                                          
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 
 </body>
 

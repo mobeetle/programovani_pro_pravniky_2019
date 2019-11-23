@@ -1,9 +1,10 @@
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- *                                                                          *
- *                                 demo.html                                *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                                 demo.html                                
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 <!DOCTYPE html>
 <html>
 
@@ -14,11 +15,13 @@
 
 <body>
 
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                             Začátek příkladu                             *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                             Začátek příkladu                             
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
   <label for="pocatecni_datum">Vyberte počáteční datum:</label>
   <input type="date" value="2019-01-01" name="pocatecni_datum" oninput="byloVybranoDatum(event);return false;" />
   <br />
@@ -27,21 +30,21 @@
   <hr />
   <div id="vystup"></div>
   <script>
-    const ms_den = 1000 * 60 * 60 * 24;     // den v milisekundách
+    const ms_den = 1000 * 60 * 60 * 24;                               // den v milisekundách
     let pocatecni_datum;
     let koncove_datum;
-    let pocatecni_datum_nastaveno = false;  // zatím nebylo nastaveno
-    let koncove_datum_nastaveno = false;    // zatím nebylo nastaveno
+    let pocatecni_datum_nastaveno = false;                            // zatím nebylo nastaveno
+    let koncove_datum_nastaveno = false;                              // zatím nebylo nastaveno
 
     function byloVybranoDatum(e) {
       switch (e.target.name) {
         case "pocatecni_datum":
           pocatecni_datum = new Date(e.target.value);
-          pocatecni_datum_nastaveno = true; // počáteční datum nastaveno
+          pocatecni_datum_nastaveno = true;                           // počáteční datum nastaveno
           break;
         case "koncove_datum":
           koncove_datum = new Date(e.target.value);
-          koncove_datum_nastaveno = true;   // koncové datum nastaveno
+          koncove_datum_nastaveno = true;                             // koncové datum nastaveno
           break;
         default: alert("Pozor na nastavení INPUT name!");
       }
@@ -52,11 +55,11 @@
         (() => {
           let vystup = document.getElementById("vystup");
           vystup.innerHTML = `Období od <b>
-        ${pocatecni_datum <= koncove_datum ?  // vždy vypíšeme jako první dřívější datum
+        ${pocatecni_datum <= koncove_datum ?                          // vždy vypíšeme jako první dřívější datum
               pocatecni_datum.toISOString().substr(0, 10) :
               koncove_datum.toISOString().substr(0, 10)}
         </b> do <b>
-        ${pocatecni_datum <= koncove_datum ?  // vždy vypíšeme jako druhé pozdější datum
+        ${pocatecni_datum <= koncove_datum ?                          // vždy vypíšeme jako druhé pozdější datum
               koncove_datum.toISOString().substr(0, 10) :
               pocatecni_datum.toISOString().substr(0, 10)}
         </b> 
@@ -72,11 +75,13 @@
       return Math.abs(rozdil);
     }
   </script>
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                              Konec příkladu                              *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                              Konec příkladu                              
+ *                                                                          
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 
 </body>
 

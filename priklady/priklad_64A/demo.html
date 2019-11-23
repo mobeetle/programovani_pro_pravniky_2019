@@ -1,9 +1,10 @@
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- *                                                                          *
- *                                 demo.html                                *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                                 demo.html                                
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 <!DOCTYPE html>
 <html>
 
@@ -14,23 +15,21 @@
 
 <body>
 
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                             Začátek příkladu                             *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                             Začátek příkladu                             
+ *                                                                          
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
   <muj-element>LISTINA ZÁKLADNÍCH PRÁV A SVOBOD
-    Federální shromáždění na základě návrhů České národní rady a Slovenské 
-    národní rady, uznávajíc neporušitelnost přirozených práv člověka, práv 
-    občana a svrchovanost zákona, navazujíc na obecně sdílené hodnoty lidství 
-    a na demokratické a samosprávné tradice našich národů, pamětlivo trpkých 
-    zkušeností z dob, kdy lidská práva a základní svobody byly v naší vlasti 
-    potlačovány, vkládajíc naděje do zabezpečení těchto práv společným úsilím 
-    všech svobodných národů, vycházejíc z práva českého národa a slovenského 
-    národa na sebeurčení, připomínajíc si svůj díl odpovědnosti vůči budoucím 
-    generacím za osud veškerého života na Zemi a vyjadřujíc vůli, aby se Česká 
-    a Slovenská Federativní Republika důstojně zařadila mezi státy, jež tyto 
-    hodnoty ctí, usneslo se na této Listině základních práv a svobod:
+    Federální shromáždění na základě návrhů České národní rady a Slovenské národní rady, uznávajíc neporušitelnost 
+    přirozených práv člověka, práv občana a svrchovanost zákona, navazujíc na obecně sdílené hodnoty lidství 
+    a na demokratické a samosprávné tradice našich národů, pamětlivo trpkých zkušeností z dob, kdy lidská práva a základní 
+    svobody byly v naší vlasti potlačovány, vkládajíc naděje do zabezpečení těchto práv společným úsilím všech svobodných 
+    národů, vycházejíc z práva českého národa a slovenského národa na sebeurčení, připomínajíc si svůj díl odpovědnosti 
+    vůči budoucím generacím za osud veškerého života na Zemi a vyjadřujíc vůli, aby se Česká a Slovenská Federativní 
+    Republika důstojně zařadila mezi státy, jež tyto hodnoty ctí, usneslo se na této Listině základních práv a svobod:
   </muj-element>
   <script>
 
@@ -38,13 +37,11 @@
     class MujElement extends HTMLElement {
       constructor() {
         super();
-        this.perex_text = this.innerHTML.substr(0, 119);		
-          // načteme si text perexu (prvních 120 znaků)
+        this.perex_text = this.innerHTML.substr(0, 119);		        // načteme si text perexu (prvních 120 znaků)
 
-        this.main_text = this.innerHTML.substr(119);			  
-          // načteme si zbytek
-          /*  s tímto by si šlo samozřejmě více vyhrát, např. aby to načítalo 
-              perex automaticky po první čárku, nikoli natvrdo 120 znaků, atp. */
+        this.main_text = this.innerHTML.substr(119);			          // načteme si zbytek
+        /*  s tímto by si šlo samozřejmě více vyhrát, např. aby to načítalo  perex automaticky po první čárku, nikoli 
+            natvrdo 120 znaků, atp. */
 
         this.attachShadow({ mode: 'open' });                 
         this.shadowRoot.innerHTML = `
@@ -66,63 +63,46 @@
         <span class="pokracovani skryty">${this.main_text}</span>
         <button class="zobraz_mene skryty">Zobraz méně</buttton>
       </section>`;		
-        // nastavíme si vnitřní strukturu našeho elementu
+                                                                    // nastavíme si vnitřní strukturu našeho elementu
       }
 
-      /*  funkce connectedCallback() se volá, jakmile je element 
-          připojen do stránky */
+      //funkce connectedCallback() se volá, jakmile je element připojen do stránky
       connectedCallback() {
-        let main_el = this.shadowRoot.querySelector("section");			          
-          // připojíme se na hlavní element
-
-        let zobraz_button_el = this.shadowRoot.querySelector(".zobraz_vice");	
-          // připojíme se na tlačítko "zobraz více"
-
-        let pokracovani_el = this.shadowRoot.querySelector(".pokracovani");		
-          // připojíme se na element se zbytkem textu
-
-        let skryj_button_el = this.shadowRoot.querySelector(".zobraz_mene");  
-          // připojíme se na tlačítko "zobraz méne"
+        let main_el = this.shadowRoot.querySelector("section");			          // připojíme se na hlavní element
+        let zobraz_button_el = this.shadowRoot.querySelector(".zobraz_vice");	// připojíme se na tlačítko "zobraz více"
+        let pokracovani_el = this.shadowRoot.querySelector(".pokracovani");		// připojíme se na element se zbytkem textu
+        let skryj_button_el = this.shadowRoot.querySelector(".zobraz_mene");  // připojíme se na tlačítko "zobraz méne"
 
         // definujeme ovladač události "klik" u tlačítka "zobraz více"
         zobraz_button_el.addEventListener("click", function (e) {
           e.target.classList.remove("viditelny");
-          e.target.classList.add("skryty");								
-            // skryj toto tlačítko
-
+          e.target.classList.add("skryty");								                    // skryj toto tlačítko
           pokracovani_el.classList.remove("skryty");
-          pokracovani_el.classList.add("viditelny");			
-            // zobraz zbytek textu
-
+          pokracovani_el.classList.add("viditelny");			                    // zobraz zbytek textu
           skryj_button_el.classList.remove("skryty");
-          skryj_button_el.classList.add("viditelny");		
-          	// zobraz tlačítko "zobraz méne"
+          skryj_button_el.classList.add("viditelny");		                      // zobraz tlačítko "zobraz méne"
         });
 
         // definujeme ovladač události "klik" u tlačítka "zobraz méně"
         skryj_button_el.addEventListener("click", function (e) {
           e.target.classList.remove("viditelny");
-          e.target.classList.add("skryty");								
-            // skryj toto tlačítko
-
+          e.target.classList.add("skryty");								                    // skryj toto tlačítko
           pokracovani_el.classList.remove("viditelny");
-          pokracovani_el.classList.add("skryty");					
-            // skryj zbytek textu
-
+          pokracovani_el.classList.add("skryty");					                    // skryj zbytek textu
           zobraz_button_el.classList.remove("skryty");
-          zobraz_button_el.classList.add("viditelny");		
-            // zobraz tlačítko "zobraz více"
+          zobraz_button_el.classList.add("viditelny");		                    // zobraz tlačítko "zobraz více"
         });
       }
     }
-    window.customElements.define('muj-element', MujElement);		
-      // zde si zaregistrujeme náš element <muj-element>
+    window.customElements.define('muj-element', MujElement);		// zde si zaregistrujeme náš element <muj-element>
   </script>
-<!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- *                                                                          *
- *                              Konec příkladu                              *
- *                                                                          *
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--  
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ *                                                                          
+ *                              Konec příkladu                              
+ *                                                                          
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-->
 
 </body>
 
