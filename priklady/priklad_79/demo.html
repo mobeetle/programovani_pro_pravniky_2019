@@ -1,51 +1,56 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>79/ Příklady - výpočet zbývající jistiny dluhu</title>
+  <title>Příklady - výpočet zbývající jistiny dluhu</title>
 </head>
+
 <body>
 
 <!-- Začátek příkladu -->
-<script>
-function spocitejZbyvajiciDluznouJistinu(jistina, celkem_let, rocni_urokova_sazba, anuit_za_rok, 
-  zaplacenych_anuit, desetinky){
-	let anuitni_urok = (rocni_urokova_sazba / anuit_za_rok) / 100;
-	let anuit_celkem = celkem_let * anuit_za_rok;
-  let nasobitel_celkovy = Math.pow((1 + anuitni_urok), anuit_celkem);
-  let nasobitel_zaplacenych_anuit = Math.pow((1 + anuitni_urok), zaplacenych_anuit);
-  let slozene_uroky_celkem = Math.pow((1 + anuitni_urok), anuit_celkem) - 1;
-  let zbyvajici_dluzna_jistina = jistina * 
-    (nasobitel_celkovy - nasobitel_zaplacenych_anuit) / (slozene_uroky_celkem);
-  return zbyvajici_dluzna_jistina.toFixed(desetinky)
-}
+  <script>
+    function spocitejZbyvajiciDluznouJistinu(jistina, celkem_let, rocni_urokova_sazba, anuit_za_rok,
+      zaplacenych_anuit, desetinky) {
+      let anuitni_urok = (rocni_urokova_sazba / anuit_za_rok) / 100;
+      let anuit_celkem = celkem_let * anuit_za_rok;
+      let nasobitel_celkovy = Math.pow((1 + anuitni_urok), anuit_celkem);
+      let nasobitel_zaplacenych_anuit = Math.pow((1 + anuitni_urok), zaplacenych_anuit);
+      let slozene_uroky_celkem = Math.pow((1 + anuitni_urok), anuit_celkem) - 1;
+      let zbyvajici_dluzna_jistina = jistina *
+        (nasobitel_celkovy - nasobitel_zaplacenych_anuit) / (slozene_uroky_celkem);
+      return zbyvajici_dluzna_jistina.toFixed(desetinky)
+    }
 
-alert(` 0 anuit = dlužná jistina: 
+    alert(` 0 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 0, 2)}`);
-//  0 anuit = dlužná jistina: 30000.00
-alert(` 1 anuita = dlužná jistina: 
+    //  0 anuit = dlužná jistina: 30000.00
+    alert(` 1 anuita = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 1, 2)}`);
-//  1 anuita = dlužná jistina: 28826.11
-alert(` 5 anuit = dlužná jistina: 
+    //  1 anuita = dlužná jistina: 28826.11
+    alert(` 5 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 5, 2)}`);
-//  5 anuit = dlužná jistina: 24066.63
-alert(`10 anuit = dlužná jistina: 
+    //  5 anuit = dlužná jistina: 24066.63
+    alert(`10 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 10, 2)}`);
-//  10 anuit = dlužná jistina: 17970.82
-alert(`15 anuit = dlužná jistina: 
+    //  10 anuit = dlužná jistina: 17970.82
+    alert(`15 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 15, 2)}`);
-//  15 anuit = dlužná jistina: 11708.11
-alert(`20 anuit = dlužná jistina: 
+    //  15 anuit = dlužná jistina: 11708.11
+    alert(`20 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 20, 2)}`);
-//  20 anuit = dlužná jistina: 5273.94
-alert(`23 anuit = dlužná jistina: 
+    //  20 anuit = dlužná jistina: 5273.94
+    alert(`23 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 23, 2)}`);
-//  23 anuit = dlužná jistina: 1329.19
-alert(`24 anuit = dlužná jistina: 
+    //  23 anuit = dlužná jistina: 1329.19
+    alert(`24 anuit = dlužná jistina: 
   ${spocitejZbyvajiciDluznouJistinu(30000, 2, 6.5, 12, 24, 2)}`);
-//  24 anuit = dlužná jistina: 0.00
-</script>
+    //  24 anuit = dlužná jistina: 0.00
+  </script>
 <!-- Konec příkladu -->
 
 </body>
+
 </html>

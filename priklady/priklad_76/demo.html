@@ -1,21 +1,26 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>76/ Příklady - výpočet jednoduchého úroku</title>
+  <title>Příklady - výpočet jednoduchého úroku</title>
 </head>
+
 <body>
 
 <!-- Začátek příkladu -->
-<script>
-function spocitejUrokyZaObdobi(jistina, celkem_let, rocni_urokova_sazba, desetinky){
-	let urok_pct = (rocni_urokova_sazba / 100);
-  let urok_pct_za_obdobi = urok_pct * celkem_let;
-  return ((urok_pct_za_obdobi * jistina).toFixed(desetinky))
-}
-alert(spocitejUrokyZaObdobi(30000, 2, 6.5, 2));       // 3900
-</script>
+  <script>
+    function spocitejUrokyZaObdobi(jistina, celkem_let, rocni_urokova_sazba, desetinky) {
+      let urok_pct = (rocni_urokova_sazba / 100);
+      let urok_pct_za_obdobi = urok_pct * celkem_let;
+      return ((urok_pct_za_obdobi * jistina).toFixed(desetinky))
+    }
+    alert(spocitejUrokyZaObdobi(30000, 2, 6.5, 2));       // 3900
+  </script>
 <!-- Konec příkladu -->
 
 </body>
+
 </html>

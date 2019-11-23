@@ -1,13 +1,11 @@
-/**
+/*
  * --------------------------------------------------------------------------
- * 72/ Electron - základní aplikace
+ * Electron - základní aplikace
  * Pozor, tento příklad nebude fungovat mimo prostředí Electron
  * --------------------------------------------------------------------------
+ * main.js
  */
 
-//
-// Následuje výpis souboru main.js:
-//
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
 let mainWindow;
@@ -34,9 +32,11 @@ app.on('activate', function () {
   if (mainWindow === null) createWindow();
 });
 
-//
-// Následuje výpis souboru preload.js:
-//
+/*
+ * --------------------------------------------------------------------------
+ * preload.js
+ */
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -47,15 +47,18 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-//
-// Následuje výpis souboru renderer.js:
-//
+/*
+ * --------------------------------------------------------------------------
+ * renderer.js
+ */
 
 // zde si může čtenář doplnit kód dle ctěné libosti
 
-//
-// Následuje výpis souboru package.json:
-//
+/*
+ * --------------------------------------------------------------------------
+ * package.json
+ */
+
 {
   "name": "zakladni-electron-aplikace",
   "version": "1.0.0",

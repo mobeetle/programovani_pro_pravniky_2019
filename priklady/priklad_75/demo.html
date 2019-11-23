@@ -1,72 +1,71 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>75/ Příklady - výpočet období</title>
+  <meta charset="utf-8">
+  <title>Příklady - výpočet období</title>
 </head>
+
 <body>
 
 <!-- Začátek příkladu -->
   <label for="pocatecni_datum">Vyberte počáteční datum:</label>
-  <input  type="date"
-          value="2019-01-01"
-          name="pocatecni_datum"
-          oninput="byloVybranoDatum(event);return false;" />
+  <input type="date" value="2019-01-01" name="pocatecni_datum" oninput="byloVybranoDatum(event);return false;" />
   <br />
   <label for="koncove_datum">Vyberte koncové datum:</label>
-  <input  type="date"
-          value="2019-01-01"
-          name="koncove_datum"
-          oninput="byloVybranoDatum(event);return false;" />
+  <input type="date" value="2019-01-01" name="koncove_datum" oninput="byloVybranoDatum(event);return false;" />
   <hr />
   <div id="vystup"></div>
-<script>
-const ms_den = 1000 * 60 * 60 * 24;     // den v milisekundách
-let pocatecni_datum;
-let koncove_datum;
-let pocatecni_datum_nastaveno = false;  // zatím nebylo nastaveno
-let koncove_datum_nastaveno = false;    // zatím nebylo nastaveno
+  <script>
+    const ms_den = 1000 * 60 * 60 * 24;     // den v milisekundách
+    let pocatecni_datum;
+    let koncove_datum;
+    let pocatecni_datum_nastaveno = false;  // zatím nebylo nastaveno
+    let koncove_datum_nastaveno = false;    // zatím nebylo nastaveno
 
-function byloVybranoDatum(e){
-	switch (e.target.name){
-  	case "pocatecni_datum":
-    	pocatecni_datum = new Date(e.target.value);
-        pocatecni_datum_nastaveno = true; // počáteční datum nastaveno
-        break;
-    case "koncove_datum":
-    	koncove_datum = new Date(e.target.value);
-        koncove_datum_nastaveno = true;   // koncové datum nastaveno
-        break;
-    default: alert("Pozor na nastavení INPUT name!");
-    }
+    function byloVybranoDatum(e) {
+      switch (e.target.name) {
+        case "pocatecni_datum":
+          pocatecni_datum = new Date(e.target.value);
+          pocatecni_datum_nastaveno = true; // počáteční datum nastaveno
+          break;
+        case "koncove_datum":
+          koncove_datum = new Date(e.target.value);
+          koncove_datum_nastaveno = true;   // koncové datum nastaveno
+          break;
+        default: alert("Pozor na nastavení INPUT name!");
+      }
 
-    // pokud je nastaveno počáteční a koncové datum, pokračujeme dál
-    pocatecni_datum_nastaveno && 
-    koncove_datum_nastaveno && 
-    (() => {
-  	  let vystup = document.getElementById("vystup");
-  	  vystup.innerHTML = `Období od <b>
+      // pokud je nastaveno počáteční a koncové datum, pokračujeme dál
+      pocatecni_datum_nastaveno &&
+        koncove_datum_nastaveno &&
+        (() => {
+          let vystup = document.getElementById("vystup");
+          vystup.innerHTML = `Období od <b>
         ${pocatecni_datum <= koncove_datum ?  // vždy vypíšeme jako první dřívější datum
-      	pocatecni_datum.toISOString().substr(0,10) : 
-        koncove_datum.toISOString().substr(0,10)}
+              pocatecni_datum.toISOString().substr(0, 10) :
+              koncove_datum.toISOString().substr(0, 10)}
         </b> do <b>
         ${pocatecni_datum <= koncove_datum ?  // vždy vypíšeme jako druhé pozdější datum
-      	koncove_datum.toISOString().substr(0,10) :
-        pocatecni_datum.toISOString().substr(0,10)}
+              koncove_datum.toISOString().substr(0, 10) :
+              pocatecni_datum.toISOString().substr(0, 10)}
         </b> 
         trvalo <b>
         ${spocitejObdobi(pocatecni_datum, koncove_datum)} </b> dní.`; // doba trvání
-    })();
-}
+        })();
+    }
 
-function spocitejObdobi(pocatecni_datum_ISO, koncove_datum_ISO){
-	let pocatecni_datum = new Date(pocatecni_datum_ISO);
-  let koncove_datum = new Date(koncove_datum_ISO);
-  let rozdil = (koncove_datum.getTime() - pocatecni_datum.getTime()) / ms_den;
- 	return Math.abs(rozdil);
-}
-</script>
+    function spocitejObdobi(pocatecni_datum_ISO, koncove_datum_ISO) {
+      let pocatecni_datum = new Date(pocatecni_datum_ISO);
+      let koncove_datum = new Date(koncove_datum_ISO);
+      let rozdil = (koncove_datum.getTime() - pocatecni_datum.getTime()) / ms_den;
+      return Math.abs(rozdil);
+    }
+  </script>
 <!-- Konec příkladu -->
 
 </body>
+
 </html>

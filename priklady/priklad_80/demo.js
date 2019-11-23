@@ -1,3 +1,10 @@
+/*
+ * --------------------------------------------------------------------------
+ * Výpočet soudního poplatku
+ * --------------------------------------------------------------------------
+ * demo.js
+ */
+
 function validace(vstup_id_str) {
   const el_vstup = document.getElementById(vstup_id_str);   // načtení vstupu
   if (isNaN(Number(el_vstup.value))) {                      // kontrola je číslo?
