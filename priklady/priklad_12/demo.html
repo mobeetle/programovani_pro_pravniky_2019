@@ -1,19 +1,24 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>12/ HTML - validace a odeslání formuláře (element INPUT typu BUTTON, RESET a SUBMIT)</title>
+  <title>HTML - validace a odeslání formuláře (element INPUT typu BUTTON, RESET a SUBMIT)</title>
 </head>
 
-<!-- Začátek příkladu -->
 <body>
+
+<!-- Začátek příkladu -->
   <form action="/ta_spravna_adresa.php">
     <input type="button" value="Klikni" />
     <input type="text" pattern="[A-Za-z]{3}" placeholder="Zadejte 3 písmena" required />
     <input type="reset" value="Vymazat" />
     <input type="submit" value="Odeslat" />
   </form>
-</body>
 <!-- Konec příkladu -->
+
+</body>
 
 </html>

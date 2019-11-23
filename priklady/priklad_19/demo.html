@@ -1,36 +1,43 @@
+<!-- demo.html-->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>19/ CSS - selektory</title>
-  
+  <title>CSS - selektory</title>
+
 <!-- Začátek příkladu -->
   <link rel="stylesheet" type="text/css" href="styl.css">
   <style>
     p {
       color: blue;
     }
+
     #upozorneni {
       background-color: yellow;
       color: red;
     }
+
     .ramecky {
       border: 3px solid black;
     }
   </style>
 </head>
+
 <body>
   Takto vypadá normální text.
   <p>Odstavce ale budou mít modrou barvu textu.</p>
   <p>Každý odstavec.</p>
-  <p id="upozorneni">Kromě odstavce s ID "upozorneni", ten bude mít žluté pozadí 
+  <p id="upozorneni">Kromě odstavce s ID "upozorneni", ten bude mít žluté pozadí
     červený text.</p>
   <p class="ramecky">Všechny elementy s třídou "ramecky" budou mít okolo sebe
     černý rámeček.</p>
   <div class="ramecky">Opravdu všechny. I DIVy.</div>
   <span class="ramecky">I SPANy.</span>
   <i class="ramecky">Ale i jakýkoli jiný element třídy "ramecky".</i>
-</body>
 <!-- Konec příkladu -->
+
+</body>
 
 </html>
