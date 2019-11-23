@@ -23,7 +23,7 @@
     let obory = ["občan", "pracko", "trest", "správa"];
 
     /*
-     * --------------------------------------------------------------------------
+     * ----------------------------------------------------------------------
      * metoda pole forEach():
      *
      * obory   název pole
@@ -36,12 +36,14 @@
      * );
      * 
      * Lze použít i šipkové funkce.
-     * --------------------------------------------------------------------------
+     * ----------------------------------------------------------------------
      */
 
     obory.forEach(
       obor => {
-        alert(obor == "občan" || obor == "pracko" ? obor + " soukromé" : obor + " veřejné");
+        alert(obor == "občan" || obor == "pracko" ? 
+          obor + " soukromé" : 
+          obor + " veřejné");
       }
     );
   </script>

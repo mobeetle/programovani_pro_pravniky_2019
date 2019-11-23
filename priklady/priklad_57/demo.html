@@ -22,7 +22,7 @@
   <script>
 
     /*
-     * --------------------------------------------------------------------------
+     * ----------------------------------------------------------------------
      * Třída CLASS:
      *
      * Definujeme jako: 
@@ -37,7 +37,7 @@
      * 
      * Objekt ze třídy tvoříme jako proměnnou: 
      * let ...proměnná... = new ...název_třídy...(...argumenty...);
-     * --------------------------------------------------------------------------
+     * ----------------------------------------------------------------------
      */
 
     class Pravnik {
@@ -57,7 +57,8 @@
         this.typ = "advokát";
       }
       info() {
-        return `Advokát ${this.jmeno} je absolventem ${this.skola} a specializuje se na ${this.specializace}`
+        return `Advokát ${this.jmeno} je absolventem ${this.skola} 
+          a specializuje se na ${this.specializace}`
       }
     }
 
@@ -68,7 +69,8 @@
         this.typ = "soudce";
       }
       info() {
-        return `Soudce ${this.jmeno} je absolventem ${this.skola} a soudí na ${this.usek} úseku`
+        return `Soudce ${this.jmeno} je absolventem ${this.skola} 
+          a soudí na ${this.usek} úseku`
       }
     }
 
@@ -79,7 +81,8 @@
         this.typ = "podnikový právník";
       }
       info() {
-        return `Právník ${this.jmeno} je absolventem ${this.skola} a pracuje v ${this.firma}`
+        return `Právník ${this.jmeno} je absolventem ${this.skola} 
+          a pracuje v ${this.firma}`
       }
     }
 
