@@ -1,22 +1,26 @@
+<!-- demo.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>54/ JavaScript - přidávání a odebírání prvků pole</title>
+  <title>JavaScript - přidávání a odebírání prvků pole</title>
 </head>
+
 <body>
 
-  <!-- Začátek příkladu -->
+<!-- Začátek příkladu -->
   <script>
     let obory = ["občan", "pracko", "trest", "správa"];
     obory.unshift("obchod");		// ["obchod", "občan", "pracko", "trest", "správa"]
     obory.push("mps");			  	// ["obchod", "občan", "pracko", "trest", "správa", "mps"]
     let a = obory.shift();			// a = obchod
     let z = obory.pop();		  	// z = mps
-    obory.splice(2,1,"mpv");		// ["občan", "pracko", "mpv", "správa"]
+    obory.splice(2, 1, "mpv");	// ["občan", "pracko", "mpv", "správa"]
     delete obory[1];				    // ["občan", , "mpv", "správa"]
   </script>
-  <!-- Konec příkladu -->
+<!-- Konec příkladu -->
 
 </body>
+
 </html>

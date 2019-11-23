@@ -1,22 +1,42 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>63/ JavaScript - interakce s uživatelem pomocí funkcí
+  <title>JavaScript - interakce s uživatelem pomocí funkcí
     a vlastností getElementById(), value, innerHTML a innerText</title>
 </head>
 
 <!-- Začátek příkladu -->
+
 <body>
   <input type="text" id="vstup1" />
   <div id="vystup1">Tento text se po klinutí na tlačítko změní</div>
   <button id="tlacitko1" onclick="osetrivstup()">Klikni</button>
   <script>
-    function osetrivstup(){
+
+    /**
+      * --------------------------------------------------------------------------
+      * Ovladače událostí Event Handler:
+      *
+      * lze definovat přímo na elementu v atributu onclick="...ovladac(e)..."
+      * nebo programově pomocí metody addEventListener(...parametry...)
+      * --------------------------------------------------------------------------
+      */
+
+    function osetrivstup() {
       let vstup1 = document.getElementById("vstup1");
       let vystup1 = document.getElementById("vystup1");
       vystup1.innerHTML = vstup1.value;
     }
+
+    let vstup1 = document.getElementById("vstup1");
+    function oznam_kliknuti(e){
+      alert(`Jsem ${e.target.src.id} a právě na mě kliknuli!!!`);
+    }
+    vstup1.addEventListener("click", oznam_kliknuti);
   </script>
 </body>
 <!-- Konec příkladu -->

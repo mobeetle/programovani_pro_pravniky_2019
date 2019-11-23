@@ -1,24 +1,48 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>50/ JavaScript - smyčka FOR ... IN a FOR ... OF</title>
+  <title>JavaScript - smyčka FOR ... IN a FOR ... OF</title>
 </head>
+
 <body>
 
-  <!-- Začátek příkladu -->
+<!-- Začátek příkladu -->
   <script>
-    let soukrome = {nazev: "soukromé", metoda: "rovné postavení", zkratka: "S"};
-    for (const polozka in soukrome){
-      alert(polozka+": "+soukrome[polozka]);
+    let soukrome = { nazev: "soukromé", metoda: "rovné postavení", zkratka: "S" };
+
+    /**
+      * --------------------------------------------------------------------------
+      * Smyčka FOR ... IN:
+      * 
+      * polozka            kam budou načítány klíče z objektu "soukrome"
+      * soukrome[polozka]  přístup k hodnotě klíče 
+      * --------------------------------------------------------------------------
+      */
+
+    for (const polozka in soukrome) {
+      alert(polozka + ": " + soukrome[polozka]);
     }
 
     let verejne = ["veřejné", "podřízené postavení", "V"];
-    for (const polozka of verejne){
+
+    /**
+      * --------------------------------------------------------------------------
+      * Smyčka FOR ... OF:
+      * 
+      * polozka            kam budou načítány hodnoty z pole "soukrome"
+      * --------------------------------------------------------------------------
+      */
+
+    for (const polozka of verejne) {
       alert(polozka);
     }
   </script>
-  <!-- Konec příkladu -->
+<!-- Konec příkladu -->
 
 </body>
+
 </html>

@@ -1,39 +1,67 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>57A/ JavaScript - klíčové slovo "this"</title>
+  <title>JavaScript - klíčové slovo "this"</title>
 </head>
+
 <body>
 
 <!-- Začátek příkladu -->
-<script>
-//	this v globálním kontextu odkazuje na Window
-alert(this);						// [object Window]
+  <script>
 
-// this v globálním kontextu (uvnitř funkce) odkazuje na Window
-function test(){
-	alert(this)
-}
-test();									// [object Window]
+    /**
+      * --------------------------------------------------------------------------
+      *
+      * "this" v globálním kontextu odkazuje na Window
+      * 
+      * --------------------------------------------------------------------------
+      */
 
-// this v metodě objektu odkazuje na objekt
-let osoba = {
-	jmeno: "Lukáš",
-  prijmeni: "Michna",
-  narozen: 1977,
-  email: "lukas.michna@post.cz",
-  hello: function(){
-  	alert(`Jméno: ${this.jmeno}, příjmení: ${this.prijmeni}, nar.: ${this.narozen}, e-mail: ${this.email}`);
-  },
-  hello2: () => {			// NEPOUŽÍVAT šipkové funkce jako metody!!!
-  	alert(`Jméno: ${this.jmeno}, příjmení: ${this.prijmeni}, nar.: ${this.narozen}, e-mail: ${this.email}`);
-  }
-}
-osoba.hello();				// Jméno: Lukáš, příjmení: Michna, nar.: 1977, e-mail: lukas.michna@post.cz
-osoba.hello2();				// Jméno: undefined, příjmení: undefined, nar.: undefined, e-mail: undefined
-</script>
-<!-- Konec příkladu -->
+    alert(this);						// [object Window]
+
+    /**
+      * --------------------------------------------------------------------------
+      *
+      * "this" v globálním kontextu (uvnitř funkce) odkazuje také na Window
+      *
+      * --------------------------------------------------------------------------
+      */
+    
+    function test() {
+      alert(this)
+    }
+    test();									// [object Window]
+
+    /**
+      * --------------------------------------------------------------------------
+      *
+      * "this" v metodě objektu odkazuje na objekt, na němž je metoda volána
+      * (neplatí, pokud použijeme šipkovou (arrow) funkci)
+      *
+      * --------------------------------------------------------------------------
+      */
+    
+    let osoba = {
+      jmeno: "Lukáš",
+      prijmeni: "Michna",
+      narozen: 1977,
+      email: "lukas.michna@post.cz",
+      hello: function () {
+        alert(`Jméno: ${this.jmeno}, příjmení: ${this.prijmeni}, nar.: ${this.narozen}, e-mail: ${this.email}`);
+      },
+      hello2: () => {			// NEPOUŽÍVAT
+        alert(`Jméno: ${this.jmeno}, příjmení: ${this.prijmeni}, nar.: ${this.narozen}, e-mail: ${this.email}`);
+      }
+    }
+    osoba.hello();				// Jméno: Lukáš, příjmení: Michna, nar.: 1977, e-mail: lukas.michna@post.cz
+    osoba.hello2();				// Jméno: undefined, příjmení: undefined, nar.: undefined, e-mail: undefined
+  </script>
+  <!-- Konec příkladu -->
 
 </body>
+
 </html>

@@ -1,12 +1,16 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>56/ JavaScript - objekty OBJECT</title>
+  <title>JavaScript - objekty OBJECT</title>
 </head>
+
 <body>
 
-  <!-- Začátek příkladu -->
+<!-- Začátek příkladu -->
   <script>
     let osoba = {
       jmeno: "Lukáš",
@@ -14,17 +18,29 @@
       email: "lukas.michna@post.cz",
       telefon: "+666(666)666-666",
       checksum: 123,
-      info: function(){
+      info: function () {
         return `JMÉNO: ${this.jmeno} ${this.prijmeni}
         KONTAKT: ${this.email} / ${this.telefon}`
       }
     };
+
+    /**
+      * --------------------------------------------------------------------------
+      * Objekt OBJECT:
+      *
+      * K prvkům objektu přistupujeme pomocí tečkové . konvence nebo podobně
+      * jako k prvkům pole pomocí hranatých závorek [], klíč musí být v uvozovkách
+      * "" nebo '' nebo ``.
+      * --------------------------------------------------------------------------
+      */
+
     alert(osoba.email);
     alert(osoba["email"]);
     alert(osoba.info());
     alert(osoba["info"]());
   </script>
-  <!-- Konec příkladu -->
+<!-- Konec příkladu -->
 
 </body>
+
 </html>

@@ -1,52 +1,76 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" t>
-  <title>57/ JavaScript - třídy CLASS</title>
+  <title>JavaScript - třídy CLASS</title>
 </head>
+
 <body>
 
-  <!-- Začátek příkladu -->
+<!-- Začátek příkladu -->
   <script>
+
+    /**
+      * --------------------------------------------------------------------------
+      * Třída CLASS:
+      *
+      * Definujeme jako: 
+      * class ...název_třídy...{
+      *   constructor(...parametry...){
+      *     ...kód_konstruktoru_třídy...
+      *   }
+      *   ...další_metody_třídy(...parametry...){
+      *     ...kód_metody_třídy...
+      *   }
+      * }
+      * 
+      * Objekt ze třídy tvoříme jako proměnnou: 
+      * let ...proměnná... = new ...název_třídy...(...argumenty...);
+      * --------------------------------------------------------------------------
+      */
+
     class Pravnik {
       constructor(jmeno, skola) {
-      this.jmeno = jmeno;
+        this.jmeno = jmeno;
         this.skola = skola;
       }
-      info(){
+      info() {
         return `Právník ${this.jmeno} je absolventem ${this.skola}`
       }
     }
 
-    class Advokat extends Pravnik{
+    class Advokat extends Pravnik {
       constructor(jmeno, skola, specializace) {
-          super(jmeno, skola);
-          this.specializace = specializace;
-          this.typ = "advokát";
+        super(jmeno, skola);
+        this.specializace = specializace;
+        this.typ = "advokát";
       }
-      info(){
+      info() {
         return `Advokát ${this.jmeno} je absolventem ${this.skola} a specializuje se na ${this.specializace}`
       }
     }
 
-    class Soudce extends Pravnik{
+    class Soudce extends Pravnik {
       constructor(jmeno, skola, usek) {
-          super(jmeno, skola);
-          this.usek = usek;
-          this.typ = "soudce";
+        super(jmeno, skola);
+        this.usek = usek;
+        this.typ = "soudce";
       }
-      info(){
+      info() {
         return `Soudce ${this.jmeno} je absolventem ${this.skola} a soudí na ${this.usek} úseku`
       }
     }
 
-    class Podnikovy extends Pravnik{
+    class Podnikovy extends Pravnik {
       constructor(jmeno, skola, firma) {
-          super(jmeno, skola);
-          this.firma = firma;
-          this.typ = "podnikový právník";
+        super(jmeno, skola);
+        this.firma = firma;
+        this.typ = "podnikový právník";
       }
-      info(){
+      info() {
         return `Právník ${this.jmeno} je absolventem ${this.skola} a pracuje v ${this.firma}`
       }
     }
@@ -59,7 +83,8 @@
     alert(lukas2.info());
     alert(lukas3.info());
   </script>
-  <!-- Konec příkladu -->
+<!-- Konec příkladu -->
 
 </body>
+
 </html>
