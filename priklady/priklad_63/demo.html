@@ -32,11 +32,11 @@
       vystup1.innerHTML = vstup1.value;
     }
 
-    let vstup1 = document.getElementById("vstup1");
-    function oznam_kliknuti(e){
-      alert(`Jsem ${e.target.src.id} a právě na mě kliknuli!!!`);
+    let tlacitko1 = document.getElementById("tlacitko1");
+    function oznam_kliknuti(e) {
+      alert(`Jsem ${e.target.id} a právě na mě kliknuli!!!`);
     }
-    vstup1.addEventListener("click", oznam_kliknuti);
+    tlacitko1.addEventListener("click", oznam_kliknuti);
   </script>
 </body>
 <!-- Konec příkladu -->
