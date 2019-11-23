@@ -1,34 +1,44 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>21/ CSS - pseudotřídy a pseudoelementy</title>
-  
+  <title>CSS - pseudotřídy a pseudoelementy</title>
+
 <!-- Začátek příkladu -->
   <style>
-    a{
+    a {
       color: gray;
     }
+
     a:hover {
       color: blue;
     }
-    a:active{
+
+    a:active {
       color: green;
     }
+
     a::before {
       content: "Podívejte se na adresu: ";
     }
+
     a:hover::after {
       content: " Ano, kliknětě!";
     }
-    a:active::before{
+
+    a:active::before {
       content: "Zvolili jste adresu: ";
     }
+
     a:active::after {
       content: "";
     }
   </style>
 </head>
+
 <body>
   <a href="http://www.mobeetle.com" target="_blank">mobeetle.com</a>
 </body>

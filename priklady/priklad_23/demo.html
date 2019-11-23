@@ -1,25 +1,32 @@
+<!-- demo.html -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>23/ CSS – selektory podle atributů elementu</title>
-  
+  <title>CSS – selektory podle atributů elementu</title>
+
 <!-- Začátek příkladu -->
   <style>
     [lang="czech"] {
       color: blue;
     }
+
     [lang*="cz"] {
       font-size: 25px;
     }
+
     [href$=".com"] {
       background-color: yellow;
     }
+
     [class~="spec"] {
       border: 3px solid red;
     }
   </style>
 </head>
+
 <body>
   <a href="http://www.mobeetle.com" lang="czech" class="odkaz spec">Odkaz</a>
 </body>
