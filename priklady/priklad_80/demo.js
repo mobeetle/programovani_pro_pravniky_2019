@@ -26,6 +26,7 @@ function vypocet(vstup_id_str, vystup_id_str) {
   const sazba_pct_1 = 1 / 100;
   let zaklad = Number(el_vstup.value);                                    // základ poplatku ze vstupu
   let poplatek = 0;                                                       // výchozí výše poplatku
+
   if ((zaklad > 0) && (zaklad <= 20000)) {                                // poplatek do 20.000,- základu
     poplatek = 1000;
   }
@@ -39,6 +40,7 @@ function vypocet(vstup_id_str, vystup_id_str) {
     zaklad = (zaklad <= 250000000) ? zaklad : 250000000;             // základ omezen na max. 250 mil.
     poplatek = 2000000 + ((zaklad - 40000000) * sazba_pct_1);        // 1 % sazba poplatku ze základu nad 40 mil.
   }
+  
   poplatek = Math.ceil(poplatek / 10) * 10;                          // zaokrouhlení poplatku na desetikoruny nahoru
   el_vystup.innerHTML =
     `<div class="card">
@@ -65,3 +67,4 @@ function vypocet(vstup_id_str, vystup_id_str) {
     </div>
 </div>`;
 }
+

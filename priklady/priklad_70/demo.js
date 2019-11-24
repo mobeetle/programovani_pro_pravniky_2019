@@ -34,3 +34,4 @@ server.listen(port, hostname, () => {
 module.exports.pozdrav = function () {
   return "Posílám Vám srdečné pozdravy z modulu!";
 }
+
